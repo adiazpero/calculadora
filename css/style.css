@@ -1,0 +1,82 @@
+.caja {
+  width: 350px;
+  background: #989898;
+  display: block;
+  margin: auto;
+  border: 1px solid #000;
+  border-radius: 20px; }
+  .caja .resultado {
+    padding: 20px 20px 0px 20px; }
+    .caja .resultado p {
+      background-color: #fff;
+      width: 100%;
+      height: 70px;
+      font-size: 2.5em;
+      font-weight: 600;
+      text-align: right; }
+  .caja .operaciones {
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .caja .operaciones .btn-operaciones {
+      background-color: #7B98F9;
+      width: 19%;
+      height: 35px;
+      border: 3px solid black;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-size: 1.5em; }
+      .caja .operaciones .btn-operaciones:hover {
+        border: 3px solid red; }
+    .caja .operaciones .c {
+      background-color: #CF6C6C; }
+  .caja .caja-teclado {
+    margin: 0px 20px; }
+    .caja .caja-teclado .fila {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .caja .caja-teclado .fila .btn-teclado {
+        width: 19%;
+        height: 60px;
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-top: 5px; }
+        .caja .caja-teclado .fila .btn-teclado:hover {
+          border: 3px solid red; }
+      .caja .caja-teclado .fila .active {
+        color: white;
+        border: 4px solid white; }
+      .caja .caja-teclado .fila .numero {
+        background-color: #FFBA5D;
+        font-size: 2.2em;
+        font-weight: 900; }
+      .caja .caja-teclado .fila .btn-columna-iz {
+        background-color: #7B98F9;
+        font-size: 1.8em;
+        font-weight: 600; }
+      .caja .caja-teclado .fila .btn-columna-dr {
+        background-color: #958484;
+        font-size: 2.2em;
+        font-weight: 900; }
+        .caja .caja-teclado .fila .btn-columna-dr:active {
+          color: white;
+          border: 4px solid white; }
+      .caja .caja-teclado .fila .btn-signo {
+        font-size: 2.2em;
+        font-weight: 900; }
+  .caja .igual {
+    width: 100%; }
+    .caja .igual .btn-igual {
+      background-color: #93BE7E;
+      width: 100%;
+      height: 90px;
+      border: 3px solid black;
+      border-radius: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      font-size: 3em;
+      font-weight: 900; }
+      .caja .igual .btn-igual:hover {
+        border: 4px solid red; }

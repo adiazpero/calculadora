@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="caja">
+
+        <div class="resultado">
+            <p id="display"></p>
+        </div>
+
+        <div class="operaciones">
+            <button class="btn-operaciones" onclick="capturarOperacion('%')">%</button>
+            <button class="btn-operaciones">M+</button>
+            <button class="btn-operaciones">M-</button>
+            <button class="btn-operaciones">MR</button>
+            <button class="btn-operaciones c" id="reset" onclick="resetCalculadora()">C</button>
+        </div>
+
+
+        <div class="caja-teclado">
+
+            <div class="fila">
+                <button class="btn-teclado btn-columna-iz" onclick="operacionEspecial('1/')">&#8543;x</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(7)">7</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(8)">8</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(9)">9</button>
+                <button class="btn-teclado btn-columna-dr" id="division" onclick="capturarOperacion('/')">/</button>
+            </div>
+            <div class="fila">
+                <button class="btn-teclado btn-columna-iz" onclick="operacionEspecial('raiz')">&#8730;x</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(4)">4</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(5)">5</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(6)">6</button>
+                <button class="btn-teclado btn-columna-dr" onclick="capturarOperacion('*')">x</button>
+            </div>
+            <div class="fila">
+                <button class="btn-teclado btn-columna-iz" onclick="operacionEspecial('cuadrado')">X&#178;</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(1)">1</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(2)">2</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(3)">3</button>
+                <button class="btn-teclado btn-columna-dr" onclick="capturarOperacion('-')">-</button>
+            </div>
+            <div class="fila">
+                <button class="btn-teclado btn-columna-iz">EE</button>
+                <button class="btn-teclado numero" onclick="capturarNumero(0)">0</button>
+                <button class="btn-teclado btn-signo" id="punto">.</button>
+                <button class="btn-teclado btn-signo">(-)</button>
+                <button class="btn-teclado btn-columna-dr" id="suma" onclick="capturarOperacion('+')">+</button>
+            </div>
+            <div class="igual">
+                <button class="btn-igual" id="igual" onclick="calcularResultado()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/funciones.js"></script>
+
+</body>
+
+</html>
